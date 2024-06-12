@@ -24,7 +24,7 @@ class KaprekarIteratorTests {
   }
 
   @ParameterizedTest
-  @CsvSource({"1000, 5","1234,3", "4980,7"})
+  @CsvSource({"1000,5","1234,3", "4980,7"})
   void givenValidInteger_ReturnsNumberOfIterations(int source, int expectedIterations) {
     int actualIterations = finder.countIterations(source);
     assertEquals(expectedIterations, actualIterations);
